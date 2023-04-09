@@ -31,6 +31,6 @@ chmod a+rwx permissions.txt
 TESTENV1="test"
 
 # my text file does not have any words of at least 3 letters.
-grep -E '^[a-Z]{3,}' data.txt > regex.txt
+grep -E '[[:alpha:]]{3,}' data.txt > regex.txt
 
 cd ..
